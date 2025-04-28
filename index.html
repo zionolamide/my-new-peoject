@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>My new project </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avatak Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Phone Bar -->
+  <div class="phone-bar">
+    Call us: <a href="tel:+4612345678">+46 123 456 78</a>
+  </div>
+
+  <!-- Navigation Tabs -->
+  <div class="tabs">
+    <button class="tab-btn" onclick="showTab('home')">Home</button>
+    <button class="tab-btn" onclick="showTab('calculator')">Price Calculator</button>
+    <button class="tab-btn" onclick="showTab('thankyou')">Thank You</button>
+  </div>
+
+  <!-- Sections -->
+  <div id="home" class="tab-content">
+    <h1>Welcome to Avatak</h1>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta-btn">Submit</button>
+    </form>
+  </div>
+
+  <div id="calculator" class="tab-content">
+    <h1>Price Calculator</h1>
+    <form id="calculatorForm">
+      <input type="number" id="area" placeholder="Enter Roof Area (sqm)" required>
+      <select id="material" required>
+        <option value="">Select Roof Material</option>
+        <option value="tile">Tile</option>
+        <option value="metal">Metal</option>
+        <option value="shingles">Shingles</option>
+      </select>
+      <input type="tel" id="phone" placeholder="Your Phone Number" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <button type="submit" class="cta-btn">Calculate Price</button>
+    </form>
+    <div id="priceResult"></div>
+  </div>
+
+  <div id="thankyou" class="tab-content">
+    <h1 class="thankyou-message">Thank you for contacting us!</h1>
+    <p class="thankyou-message">We have received your request and will get back to you soon.</p>
+  </div>
+
+  <footer>
+    <div class="locations">
+      <h3>Our Locations</h3>
+      <div class="location-grid">
+        <div class="location"><span class="location-icon">📍</span><p>Allen</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Addison</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Carrollton</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Coppell</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Dallas</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Farmers Branch</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Frisco</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Flower Mound</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Grand Prairie</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Grapevine</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Highland Park</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Irving</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Lewisville</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Mesquite</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Plano</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>Richardson</p></div>
+        <div class="location"><span class="location-icon">📍</span><p>The Colony</p></div>
+      </div>
+
+      <!-- Dallas iframe -->
+      <div class="dallas-map">
+        <iframe src="https://maps.google.com/maps?q=Dallas&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
